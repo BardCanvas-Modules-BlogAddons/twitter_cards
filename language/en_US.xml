@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Twitter cards</display_name>
+    <icon>fa-twitter-square</icon>
+    <description>
+        Twitter cards support. Adds metas on single posts and media item pages. Configurable settings included.
+    </description>
+    
+    <settings_data>
+        <title>Twitter card options</title>
+        
+        <specs key="render_on_posts">
+            <title>Render on posts</title>
+            <description><![CDATA[
+                Render cards on single post pages.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+        
+        <specs key="render_on_media">
+            <title>Render on media pages</title>
+            <description><![CDATA[
+                Render cards on media item pages.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+        
+        <specs key="twitter_site">
+            <title>Twitter site</title>
+            <description><![CDATA[
+                Twitter user name to render as site. Starts with a @
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="card_type">
+            <title>Card type</title>
+            <description><![CDATA[
+                Card tyoe to render as
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="summary">Summary</option>
+                <option value="summary_large_image">Summary with large image</option>
+            </options>
+        </specs>
+        
+        <specs key="home_description">
+            <title>Home page description</title>
+            <description><![CDATA[
+                Description used on the home page and on those pages that don't have an excerpt or a description defined.
+            ]]></description>
+            <type>textarea</type>
+        </specs>
+        
+        <specs key="fallback_image">
+            <title>Fallback image</title>
+            <description><![CDATA[
+                If the post has no featured image, use this one.<br>
+                <span class="fa fa-warning"></span>
+                Warning: it may be overridden by other modules!
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+        </specs>
+        
+        <specs key="image_size">
+            <title>Image size</title>
+            <description><![CDATA[
+                Dimensions to set the image to before using it on twitter.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="small"            >280x375</option>
+                <option value="web"              >560x750</option>
+                <option value="mobile-non-retina">435x375</option>
+                <option value="mobile-retina"    >280x150</option>
+            </options>
+        </specs>
+        
+    </settings_data>
+    
+</language>
