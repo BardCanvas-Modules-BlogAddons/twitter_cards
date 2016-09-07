@@ -8,7 +8,7 @@
     </description>
     
     <settings_data>
-        <title>Twitter card options</title>
+        <title>Twitter cards</title>
         
         <specs key="render_on_posts">
             <title>Render on posts</title>
@@ -29,7 +29,7 @@
         <specs key="twitter_site">
             <title>Twitter site</title>
             <description><![CDATA[
-                Twitter user name to render as site. Starts with a @
+                Twitter user name to render as site. Starts with a <code>@</code>
             ]]></description>
             <type>text</type>
         </specs>
@@ -67,14 +67,14 @@
         <specs key="image_size">
             <title>Image size</title>
             <description><![CDATA[
-                Dimensions to set the image to before using it on twitter.
+                Dimensions to set the image to before using it on Twitter.
             ]]></description>
             <type>list</type>
             <options>
-                <option value="small"            >280x375</option>
-                <option value="web"              >560x750</option>
-                <option value="mobile-non-retina">435x375</option>
-                <option value="mobile-retina"    >280x150</option>
+                <option value="small"            >280x375 (small)</option>
+                <option value="web"              >560x750 (web)</option>
+                <option value="mobile-non-retina">280x150 (mobile, non-retina)</option>
+                <option value="mobile-retina"    >435x375 (mobile, retina)</option>
             </options>
         </specs>
         

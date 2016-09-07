@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>Tarjetas de Twitter</display_name>
+    <icon>fa-twitter-square</icon>
+    <description>
+        Soporte para tarjetas de Twitter. Añade metas en páginas de entradas y medios individuales.
+        Incluye opciones configurables.
+    </description>
+    
+    <settings_data>
+        <title>Tarjetas de Twitter</title>
+        
+        <specs key="render_on_posts">
+            <title>Incluír en entradas</title>
+            <description><![CDATA[
+                Incluír en páginas de entrada individuales.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+        
+        <specs key="render_on_media">
+            <title>Incluír en páginas de medios</title>
+            <description><![CDATA[
+                Incluír tarjetas en páginas individuales de medios.
+            ]]></description>
+            <type>boolean</type>
+        </specs>
+        
+        <specs key="twitter_site">
+            <title>Sitio en Twitter</title>
+            <description><![CDATA[
+                Nombre de usuario de Twitter a incluír como sitio. Comienza con <code>@</code>.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="card_type">
+            <title>tipo de tarjeta</title>
+            <description><![CDATA[
+                Seleccionar una opción.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="summary">Sumario</option>
+                <option value="summary_large_image">Sumario con imagen grande</option>
+            </options>
+        </specs>
+        
+        <specs key="home_description">
+            <title>Descripción en página principal</title>
+            <description><![CDATA[
+                Descripción usada en la página principal del sitio para entregar a Twitter.
+                También se usa por defecto en las páginas que no tienen un extracto o descripción definida.
+            ]]></description>
+            <type>textarea</type>
+        </specs>
+        
+        <specs key="fallback_image">
+            <title>Imagen de respaldo</title>
+            <description><![CDATA[
+                Si las entradas no tienen una imagen destacada, usar la aquí definida.<br>
+                <span class="fa fa-warning"></span>
+                Advertencia: es posible que otros módulos sobreescriban este valor.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+        </specs>
+        
+        <specs key="image_size">
+            <title>Tamaño de imagen</title>
+            <description><![CDATA[
+                Dimensiones a definir para la imagen antes de usarla en Twitter.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="small"            >280x375 (pequeña)</option>
+                <option value="web"              >560x750 (web)</option>
+                <option value="mobile-non-retina">280x150 (móviles, baja densidad)</option>
+                <option value="mobile-retina"    >435x375 (móviles, alta densidad)</option>
+            </options>
+        </specs>
+        
+    </settings_data>
+    
+</language>
