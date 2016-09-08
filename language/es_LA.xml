@@ -51,7 +51,7 @@
             <title>Descripción en página principal</title>
             <description><![CDATA[
                 Descripción usada en la página principal del sitio para entregar a Twitter.
-                También se usa por defecto en las páginas que no tienen un extracto o descripción definida.
+                También se usa por defecto en las páginas que no tienen un resumen o descripción definida.
             ]]></description>
             <type>textarea</type>
         </specs>
