@@ -64,6 +64,9 @@
                 Advertencia: es posible que otros módulos sobreescriban este valor.
             ]]></description>
             <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
         </specs>
         
         <specs key="image_size">

@@ -62,6 +62,9 @@
                 Warning: it may be overridden by other modules!
             ]]></description>
             <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
         </specs>
         
         <specs key="image_size">
