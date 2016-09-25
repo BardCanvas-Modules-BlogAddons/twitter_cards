@@ -8,6 +8,8 @@
         Incluye opciones configurables.
     </description>
     
+    <tweet_button_caption>Twittear</tweet_button_caption>
+    
     <settings_data>
         <title>Tarjetas de Twitter</title>
         
