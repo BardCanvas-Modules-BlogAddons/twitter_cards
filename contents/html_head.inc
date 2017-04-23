@@ -25,9 +25,6 @@ global $settings, $template;
 if( $template->layout == "admin" ) return;
 if( $template->layout == "embeddable" ) return;
 
-if( $settings->get("modules:twitter_cards.render_on_posts") != "true" &&
-    $settings->get("modules:twitter_cards.render_on_media") != "true" ) return;
-
 if( $settings->get("modules:twitter_cards.twitter_site")    == "" ) return;
 if( $settings->get("modules:twitter_cards.card_type")       == "" ) return;
 
