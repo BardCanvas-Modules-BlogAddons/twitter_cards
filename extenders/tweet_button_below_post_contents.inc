@@ -16,6 +16,9 @@ global $post, $settings;
 
 if( empty($post) ) return;
 
+if( $settings->get("modules:twitter_cards.render_on_posts") != "true" &&
+    $settings->get("modules:twitter_cards.render_on_media") != "true" ) return;
+
 $author_name    = htmlspecialchars($post->author_display_name);
 $post_title     = htmlspecialchars($post->title);
 $category_text  = "[{$post->main_category_title}]";
@@ -24,7 +27,7 @@ $button_caption = $this_module->language->tweet_button_caption;
 $data_via       = trim($settings->get("modules:twitter_cards.twitter_site"), "@");
 
 echo "
-    <p>
+    <p class='post_social_buttons' data-module='twitter_cards'>
         <a href='https://twitter.com/share' class='twitter-share-button' 
            data-url='{$post->get_permalink(true)}' data-text='{$tweet_text}' data-via='{$data_via}' 
            data-size='large'>$button_caption</a>
