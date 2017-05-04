@@ -39,7 +39,7 @@ if( $template->get("page_tag") == "home" )
     $title = $settings->get("engine.website_name");
     $image = "{$config->full_root_url}/{$settings->get("modules:twitter_cards.fallback_image")}";
 }
-elseif( $settings->get("modules:twitter_cards.render_on_posts") == "true" && $template->get("page_tag") == "single_post" )
+elseif( $template->get("page_tag") == "single_post" )
 {
     $title       = $post->title;
     $description = $post->excerpt;
@@ -47,7 +47,7 @@ elseif( $settings->get("modules:twitter_cards.render_on_posts") == "true" && $te
     # TODO: Implement external user tags profile pic here
     $image       = "{$config->full_root_url}/{$post->featured_image_thumbnail}";
 }
-elseif( $settings->get("modules:twitter_cards.render_on_media") == "true" && $template->get("page_tag") == "single_media_item" )
+elseif( $template->get("page_tag") == "single_media_item" )
 {
     $title       = $item->title;
     $description = $item->get_description_excerpt();
