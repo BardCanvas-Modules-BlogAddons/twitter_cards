@@ -14,17 +14,17 @@
         <title>Tarjetas de Twitter</title>
         
         <specs key="render_on_posts">
-            <title>Incluír en entradas</title>
+            <title>Incluír botón "twittear" en entradas</title>
             <description><![CDATA[
-                Incluír en páginas de entrada individuales.
+                Nota: los encabezados <code>&lt;meta&gt;</code> siempre se incluyen.
             ]]></description>
             <type>boolean</type>
         </specs>
         
-        <specs key="render_on_media">
-            <title>Incluír en páginas de medios</title>
+        <specs key="render_on_media" disabled="true">
+            <title>Incluír botón "twittear" en páginas de medios</title>
             <description><![CDATA[
-                Incluír tarjetas en páginas individuales de medios.
+                Nota: los encabezados <code>&lt;meta&gt;</code> siempre se incluyen.
             ]]></description>
             <type>boolean</type>
         </specs>

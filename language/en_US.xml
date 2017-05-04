@@ -13,17 +13,17 @@
         <title>Twitter cards</title>
         
         <specs key="render_on_posts">
-            <title>Render on posts</title>
+            <title>Render "tweet" buton on posts</title>
             <description><![CDATA[
-                Render cards on single post pages.
+                Note: <code>&lt;meta&gt;</code> tags are always rendered.
             ]]></description>
             <type>boolean</type>
         </specs>
         
-        <specs key="render_on_media">
-            <title>Render on media pages</title>
+        <specs key="render_on_media" disabled="true">
+            <title>Render "tweet" button on media pages</title>
             <description><![CDATA[
-                Render cards on media item pages.
+                Note: <code>&lt;meta&gt;</code> tags are always rendered.
             ]]></description>
             <type>boolean</type>
         </specs>
