@@ -1,5 +1,11 @@
 
-# Sharethis Module Change Log
+# Twitter Cards Module Change Log
+
+## [1.3.0] - 2017-05-05
+
+- Changed language captions.
+- Adjusted button rendering checks.
+- Er... modified module name on the heading of the changelog. *blush*
 
 ## [1.2.2] - 2017-04-23
 
