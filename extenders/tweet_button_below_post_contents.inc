@@ -16,8 +16,7 @@ global $post, $settings;
 
 if( empty($post) ) return;
 
-if( $settings->get("modules:twitter_cards.render_on_posts") != "true" &&
-    $settings->get("modules:twitter_cards.render_on_media") != "true" ) return;
+if( $settings->get("modules:twitter_cards.render_on_posts") != "true" ) return;
 
 $author_name    = htmlspecialchars($post->author_display_name);
 $post_title     = htmlspecialchars($post->title);
