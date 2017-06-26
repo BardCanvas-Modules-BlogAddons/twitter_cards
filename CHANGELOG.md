@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.1] - 2017-06-26
+
+- Removed deprecated check.
+
 ## [1.3.0] - 2017-05-05
 
 - Changed language captions.
