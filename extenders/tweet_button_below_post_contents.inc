@@ -18,12 +18,15 @@ if( empty($post) ) return;
 
 if( $settings->get("modules:twitter_cards.render_on_posts") != "true" ) return;
 
+$twitter_site = $settings->get("modules:twitter_cards.twitter_site");
+if( empty($twitter_site) ) return;
+
 $author_name    = htmlspecialchars($post->author_display_name);
 $post_title     = htmlspecialchars($post->title);
 $category_text  = "[{$post->main_category_title}]";
 $tweet_text     = trim("{$author_name}: {$post_title} {$category_text}");
 $button_caption = $this_module->language->tweet_button_caption;
-$data_via       = trim($settings->get("modules:twitter_cards.twitter_site"), "@");
+$data_via       = trim($twitter_site, "@");
 
 echo "
     <p class='post_social_buttons' data-module='twitter_cards'>
