@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.2] - 2017-07-26
+
+- Removed button by default unless a site is specified.
+
 ## [1.3.1] - 2017-06-26
 
 - Removed deprecated check.
