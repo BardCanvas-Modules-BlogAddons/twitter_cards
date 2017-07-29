@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.3] - 2017-07-29
+
+- Added check to avoid rendering in unpublished posts.
+
 ## [1.3.2] - 2017-07-26
 
 - Removed button by default unless a site is specified.
