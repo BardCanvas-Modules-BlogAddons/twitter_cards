@@ -24,6 +24,7 @@ global $settings, $template;
 
 if( $template->layout == "admin" ) return;
 if( $template->layout == "embeddable" ) return;
+if( $config->globals["modules:twitter_cards.no_metas_injection"] ) return;
 
 if( $settings->get("modules:twitter_cards.twitter_site")    == "" ) return;
 if( $settings->get("modules:twitter_cards.card_type")       == "" ) return;
