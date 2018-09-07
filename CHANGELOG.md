@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.4] - 2018-09-07
+
+- Added flag to programatically avoid rendering meta tags.
+
 ## [1.3.3] - 2017-07-29
 
 - Added check to avoid rendering in unpublished posts.
