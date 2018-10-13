@@ -46,7 +46,7 @@ elseif( $template->get("page_tag") == "single_post" )
     $description = $post->excerpt;
     
     # TODO: Implement external user tags profile pic here
-    $image       = "{$config->full_root_url}/{$post->featured_image_thumbnail}";
+    $image       = "{$config->full_root_url}{$post->featured_image_thumbnail}";
 }
 elseif( $template->get("page_tag") == "single_media_item" )
 {
