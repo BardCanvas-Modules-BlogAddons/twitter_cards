@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.5] - 2018-10-04
+
+- Fixed issue on twitter:image tag.
+
 ## [1.3.4] - 2018-09-07
 
 - Added flag to programatically avoid rendering meta tags.
