@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.6] - 2019-10-08
+
+- Removed mandatory setting of twitter site to render tags and button.
+
 ## [1.3.5] - 2018-10-04
 
 - Fixed issue on twitter:image tag.
