@@ -32,6 +32,7 @@
         <specs key="twitter_site">
             <title>Sitio en Twitter</title>
             <description><![CDATA[
+                <span class="framed_content inlined state_highlight">Opcional</span>
                 Nombre de usuario de Twitter a incluír como sitio. Comienza con <code>@</code>.
             ]]></description>
             <type>text</type>

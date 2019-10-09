@@ -31,6 +31,7 @@
         <specs key="twitter_site">
             <title>Twitter site</title>
             <description><![CDATA[
+                <span class="framed_content inlined state_highlight">Optional</span>
                 Twitter user name to render as site. Starts with a <code>@</code>
             ]]></description>
             <type>text</type>

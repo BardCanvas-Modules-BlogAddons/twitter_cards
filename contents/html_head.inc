@@ -56,15 +56,16 @@ elseif( $template->get("page_tag") == "single_media_item" )
 }
 
 if( empty($description) ) $description = $settings->get("modules:twitter_cards.home_description");
+
+$twitter_site = $settings->get("modules:twitter_cards.twitter_site");
 ?>
 
 <!-- [+] twitter_cards -->
 <meta name="twitter:card"       content="<?= $settings->get("modules:twitter_cards.card_type") ?>">
-<meta name="twitter:site"       content="<?= $settings->get("modules:twitter_cards.twitter_site") ?>">
-<? if( ! empty($title)):       ?><meta name="twitter:title"       content="<?= htmlspecialchars($title) ?>"><? endif; ?>
+<? if( ! empty($twitter_site) ): ?><meta name="twitter:site"        content="<?= $twitter_site ?>"><? endif; ?>
+<? if( ! empty($title) ):        ?><meta name="twitter:title"       content="<?= htmlspecialchars($title) ?>"><? endif; ?>
 
-<? if( ! empty($description)): ?><meta name="twitter:description" content="<?= htmlspecialchars($description) ?>"><? endif; ?>
+<? if( ! empty($description) ):  ?><meta name="twitter:description" content="<?= htmlspecialchars($description) ?>"><? endif; ?>
 
 <meta name="twitter:image"       content="<?= $image ?>">
 <!-- [-] twitter_cards -->
-
