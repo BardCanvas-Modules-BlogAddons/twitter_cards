@@ -32,9 +32,9 @@ if( $settings->get("modules:twitter_cards.card_type")       == "" ) return;
 $post = $template->get("current_post");
 $item = $template->get("current_item");
 
-$title       = "";
-$description = "";
-$image       = "";
+$title       = $template->get_page_title(false);
+$description = $template->page_meta_description;
+$image       = $template->page_meta_image;
 if( $template->get("page_tag") == "home" )
 {
     $title = $settings->get("engine.website_name");
