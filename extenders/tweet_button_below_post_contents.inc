@@ -3,7 +3,7 @@
  * Posts extender: profile renderer below the post contents
  * 
  * @package    BardCanvas
- * @subpackage external_usertags
+ * @subpackage twitter_cards
  * @author     Alejandro Caballero - lava.caballero@gmail.com
  * 
  * Imported globals:
