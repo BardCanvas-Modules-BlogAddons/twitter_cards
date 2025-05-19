@@ -1,6 +1,10 @@
 
 # Twitter Cards Module Change Log
 
+## [1.3.8] - 2025-05-19
+
+- Minor cleanup.
+
 ## [1.3.7] - 2021-07-06
 
 - Added defaults to Twitter SEO tags.
